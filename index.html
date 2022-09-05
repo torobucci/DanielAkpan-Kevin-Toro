@@ -7,20 +7,54 @@
   </head>
 
   <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="h1title">
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    </div>
+ 
+ <div id="form-div">
+   <form id='survey-form'>
+     <label id='name-label'><b> Name</label><br>
+     <input id='name'type='name' placeholder='enter your name'required><br><br>
+     <label id='email-label'><b>Email</b></label><br>
+     <input id='email'type="email" placeholder="enter your email"required><br><br>
+     <label id='number-label'><b>Number:</b></label><br>
+     <input id='number'type='number' placeholder="enter number" max='28' min='16'><br><br>
+     <p>Which option best describes your current role?</p>
+     <select  id="dropdown">
+      <option id='opt'value="opt1">Student</option>
+      <option  id='opt' value="opt2">Full-time job</option>
+      <option  id='opt' value="opt3">Part-time job</option>
+     </select><br><br>
+     <div id="radio-buttons">
+      <p>Which option best describes your current role?</p>
+      <input type="radio"name='radio' value="definetly">definetly <br><br>
+      <input type="radio"name='radio' value="maybe">maybe <br><br>
+      <input type="radio" name='radio'value="not sure">not sure <br><br>
+    </div>
+      <p>What would you like to see improved? (Check all that apply)</p>
+     <input type="checkbox" value="not sure">Front end dev <br><br>
+     <input type="checkbox" value="not sure">Back end dev<br><br>
+     <input type="checkbox" value="not sure">Data visualization <br><br>
+     <input type="checkbox" value="not sure">CyberSecurity <br><br>
+     <p>Any comments or suggestions?</p>
+     <textarea name="" id="" cols="30" rows="10"placeholder='enter your text here'></textarea><br><br>
+     <button id="submit" type="submit">Submit</button>
+     </form>
+     </div> 
+</body>
+</html>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
+ <script  src="js/index.js"></script>
   </body>
 </html>
